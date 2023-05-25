@@ -1,4 +1,5 @@
-const userController = require("./controllers/UserController");
+const userController = require("./controllers/userController");
+const productController = require("./controllers/productController");
 
 module.exports = [
   {
@@ -9,6 +10,6 @@ module.exports = [
   {
     endpoint: "/products",
     method: "GET",
-    handler: userController.listProducts,
+    handler: productController.listProducts,
   },
 ];
